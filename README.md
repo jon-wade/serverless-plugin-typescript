@@ -1,15 +1,6 @@
 # serverless-plugin-typescript
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com) [![npm version](https://badge.fury.io/js/serverless-plugin-typescript.svg)](https://badge.fury.io/js/serverless-plugin-typescript) [![Build Status](https://travis-ci.org/prisma/serverless-plugin-typescript.svg?branch=master)](https://travis-ci.org/prisma/serverless-plugin-typescript)
 
-Serverless plugin for zero-config Typescript support
-
-## Features
-
-* Zero-config: Works out of the box without the need to install any other compiler or plugins
-* Supports ES2015 syntax + features (`export`, `import`, `async`, `await`, `Promise`, ...)
-* Supports `sls package`, `sls deploy` and `sls deploy function`
-* Supports `sls invoke local` + `--watch` mode
-* Integrates nicely with [`serverless-offline`](https://github.com/dherault/serverless-offline)
+A fork off [`serverless-plugin-typescript`](https://github.com/prisma-labs/serverless-plugin-typescript) to fix some security issues.
 
 ## Install
 
@@ -142,33 +133,3 @@ Options are:
 - `--watch` - recompile and run a function locally on source changes
 - `--path` or `-p` (optional) path to JSON or YAML file holding input data
 - `--data` or `-d` (optional) input data
-
-### Enabling source-maps
-
-You can easily enable support for source-maps (making stacktraces easier to read) by installing and using the following plugin:
-
-```sh
-yarn add --dev source-map-support
-```
-
-```ts
-// inside of your function
-import 'source-map-support/register'
-```
-
-If you are using webpack (most likely). Add `devtool: 'source-map'` to `webpack.config.js`:
-```js
-module.exports = {
-  .... snip ....
-  devtool: 'source-map',
-  .... snip ....
-
-}
-```
-
-## Help & Community
-
-Join our [Spectrum community](http://spectrum.chat/prisma) if you run into issues or have questions. We love talking to you!
-
-<p align="center"><a href="https://oss.prisma.io"><img src="https://imgur.com/IMU2ERq.png" alt="Prisma" height="170px"></a></p>
-

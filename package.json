@@ -1,6 +1,6 @@
 {
-  "name": "serverless-plugin-typescript",
-  "version": "0.0.0-semantic-release",
+  "name": "@jonwade/serverless-plugin-typescript",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/src/index.js",
   "files": [
@@ -16,16 +16,6 @@
     "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prisma/serverless-plugin-typescript.git"
-  },
-  "keywords": [
-    "serverless",
-    "serverless plugin",
-    "typescript",
-    "aws lambda"
-  ],
   "devDependencies": {
     "@types/fs-extra": "5.0.5",
     "@types/jest": "24.0.12",
